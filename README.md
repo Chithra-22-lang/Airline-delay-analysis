@@ -24,7 +24,7 @@ This project analyzes airline delay data to identify patterns and insights.
 Kaggle Flight Delay Dataset
 
 ## 🖼 Dashboard
-
+![Dashboard](dashboard.png)
 
 ## SQL Analysis
 
@@ -37,8 +37,10 @@ SELECT COUNT(*) FROM flights;
 ```sql
 SELECT AVG(delay) FROM flights;
 ```
-
-
+- Airline-wise Delay:
+SELECT airline, AVG(arrival_delay)
+FROM flights
+GROUP BY airline;
 
 
 

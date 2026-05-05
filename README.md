@@ -26,4 +26,19 @@ Kaggle Flight Delay Dataset
 ## 🖼 Dashboard
 
 
+## SQL Analysis
+
+### Total Flights
+```sql
+SELECT COUNT(*) FROM flights;
+```
+
+### Average Delay
+```sql
+SELECT AVG(delay) FROM flights;
+```
+
+
+
+
 

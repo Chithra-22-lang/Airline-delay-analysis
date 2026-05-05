@@ -1,6 +1,4 @@
-# Airline-delay-analysis
-Airline Delay Analysis using SQL and Tableau
-# ✈️ Airline Delay Analysis
+# ✈️ Airline Delay Analysis using SQL & Tableau
 
 ## 📌 Overview
 This project analyzes airline delay data to identify patterns and insights.
@@ -23,6 +21,12 @@ This project analyzes airline delay data to identify patterns and insights.
 ## 📂 Dataset
 Kaggle Flight Delay Dataset
 
+## 🚀 How to Run
+1. Open dataset in Excel / SQL
+2. Run queries from queries.sql
+3. Open Tableau dashboard file
+
+
 ## 🖼 Dashboard
 ![Dashboard](dashboard.png)
 
@@ -30,17 +34,17 @@ Kaggle Flight Delay Dataset
 
 ### Total Flights
 ```sql
-SELECT COUNT(*) FROM flights;
+SELECT COUNT(*) FROM clean_flights;
 ```
 
 ### Average Delay
 ```sql
-SELECT AVG(delay) FROM flights;
+SELECT AVG(ARRIVAL_DELAY) FROM clean_flights;
 ```
 - Airline-wise Delay:
-SELECT airline, AVG(arrival_delay)
-FROM flights
-GROUP BY airline;
+SELECT AIRLINE, AVG(ARRIVAL_DELAY)
+FROM clean_flights
+GROUP BY AIRLINE;
 
 
 
